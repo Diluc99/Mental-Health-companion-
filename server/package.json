@@ -1,0 +1,21 @@
+{
+  "name": "mental-health-companion-server",
+  "version": "1.0.0",
+  "description": "Backend for Mental Health Companion app",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "jest"
+  },
+  "dependencies": {
+    "axios": "^1.7.2",
+    "aws-sdk": "^2.1650.0",
+    "express": "^4.19.2",
+    "uuid": "^10.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.0",
+    "eslint-plugin-jest": "^27.9.0",
+    "jest": "^29.7.0"
+  }
+}

@@ -1,0 +1,350 @@
+/* General Page Styles */
+.App {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 30px;
+  font-family: 'Poppins', Arial, sans-serif;
+  background: linear-gradient(135deg, #2c3e50 0%, #1e2a44 100%);
+  min-height: 100vh;
+  color: #ffffff;
+}
+
+/* Header Styles */
+.header {
+  text-align: center;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: 700;
+  margin: 0;
+  color: #ffffff;
+}
+
+.header p {
+  font-size: 14px;
+  color: #b0bec5;
+  margin: 5px 0 0;
+  text-align: right;
+}
+
+/* Section Styles */
+.section {
+  margin: 30px 0;
+  padding: 25px;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+  font-size: 26px;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+/* Mood Buttons */
+.mood-buttons {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.mood-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  background: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: transform 0.2s ease, background 0.3s ease;
+}
+
+.mood-button.active {
+  background: linear-gradient(135deg, #42a5f5, #1e88e5);
+  color: #ffffff;
+}
+
+.mood-button:hover {
+  transform: scale(1.1);
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.mood-button.active:hover {
+  background: linear-gradient(135deg, #1e88e5, #1565c0);
+}
+
+/* Journal Input */
+.journal-input {
+  width: 100%;
+  height: 120px;
+  padding: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  resize: none;
+  transition: border-color 0.3s ease;
+}
+
+.journal-input:focus {
+  border-color: #42a5f5;
+  outline: none;
+  box-shadow: 0 0 5px rgba(66, 165, 245, 0.3);
+}
+
+.journal-input::placeholder {
+  color: #b0bec5;
+}
+
+.tags-input {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  transition: border-color 0.3s ease;
+}
+
+.tags-input:focus {
+  border-color: #42a5f5;
+  outline: none;
+  box-shadow: 0 0 5px rgba(66, 165, 245, 0.3);
+}
+
+.tags-input::placeholder {
+  color: #b0bec5;
+}
+
+.save-button {
+  padding: 12px 25px;
+  background: linear-gradient(135deg, #42a5f5, #1e88e5);
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  transition: transform 0.2s ease, background 0.3s ease;
+}
+
+.save-button:hover {
+  transform: scale(1.05);
+  background: linear-gradient(135deg, #1e88e5, #1565c0);
+}
+
+/* Chat Section */
+.chat-container {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.chat-input {
+  flex: 1;
+  padding: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  font-size: 16px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  transition: border-color 0.3s ease;
+}
+
+.chat-input:focus {
+  border-color: #42a5f5;
+  outline: none;
+  box-shadow: 0 0 5px rgba(66, 165, 245, 0.3);
+}
+
+.chat-input::placeholder {
+  color: #b0bec5;
+}
+
+.send-button {
+  padding: 12px 25px;
+  background: linear-gradient(135deg, #42a5f5, #1e88e5);
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  transition: transform 0.2s ease, background 0.3s ease;
+}
+
+.send-button:hover {
+  transform: scale(1.05);
+  background: linear-gradient(135deg, #1e88e5, #1565c0);
+}
+
+.chat-response {
+  margin-top: 20px;
+  padding: 15px;
+  background: rgba(66, 165, 245, 0.2);
+  border-radius: 10px;
+  color: #ffffff;
+  font-size: 16px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.chat-response p {
+  margin: 0;
+}
+
+.chat-error {
+  margin-top: 20px;
+  padding: 15px;
+  background: rgba(239, 83, 80, 0.2);
+  border-radius: 10px;
+  color: #ffcccb;
+  font-size: 16px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.chat-error p {
+  margin: 0;
+}
+
+/* Journal History */
+.toggle-button {
+  padding: 12px 25px;
+  background: linear-gradient(135deg, #42a5f5, #1e88e5);
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  transition: transform 0.2s ease, background 0.3s ease;
+}
+
+.toggle-button:hover {
+  transform: scale(1.05);
+  background: linear-gradient(135deg, #1e88e5, #1565c0);
+}
+
+.journal-entry {
+  margin: 15px 0;
+  padding: 20px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.journal-entry:hover {
+  transform: translateY(-3px);
+}
+
+.journal-entry p {
+  margin: 8px 0;
+  font-size: 16px;
+  color: #b0bec5;
+}
+
+.journal-entry p strong {
+  color: #ffffff;
+}
+
+.delete-button {
+  padding: 10px 20px;
+  background: linear-gradient(135deg, #ef5350, #e53935);
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: transform 0.2s ease, background 0.3s ease;
+}
+
+.delete-button:hover {
+  transform: scale(1.05);
+  background: linear-gradient(135deg, #e53935, #d32f2f);
+}
+
+/* Graph Styles */
+.graph-container {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.mood-graph {
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.mood-graph:hover {
+  transform: scale(1.02);
+}
+
+/* Animations */
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 0.8s ease forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.slide-in {
+  opacity: 0;
+  animation: slideIn 0.5s ease forwards;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

@@ -1,0 +1,14 @@
+# Environment variables
+server/.env
+
+# Node modules (dependencies, will be reinstalled)
+node_modules/
+client/node_modules/
+server/node_modules/
+.tmp.driveupload/
+
+
+# Editor/IDE files
+.vscode/
+.idea/
+*.log

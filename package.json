@@ -1,0 +1,12 @@
+{
+  "name": "mental-health-companion",
+  "version": "1.0.0",
+  "description": "A full-stack web app for mental health support",
+  "scripts": {
+    "start:server": "cd server && npm start",
+    "start:client": "cd client && set PORT=3001 && npm start",
+    "start": "npm run start:server & npm run start:client"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}
